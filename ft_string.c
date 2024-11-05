@@ -6,13 +6,13 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:10 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 19:58:16 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/05 22:17:29 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_string(char *str, int *len)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (!str)
@@ -24,6 +24,6 @@ void	ft_string(char *str, int *len)
 	if (str[i] != '\0')
 	{
 		ft_putchar_len(str[i], len);
-		i++
+		i++;
 	}
 }

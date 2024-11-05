@@ -6,11 +6,13 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:14 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 19:37:12 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/05 22:31:40 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_unsigned_int(unsigned int u, int *len)
 {
-	
+	if (u >= 10)
+		ft_unsigned_int(u / 10, len);
+	ft_putchar_len(u % 10 + '0', len);
 }
