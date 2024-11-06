@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:03 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 22:16:27 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:26:02 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_pointer(size_t ptr, int *len)
 {
@@ -16,7 +18,7 @@ void	ft_pointer(size_t ptr, int *len)
 	int			i;
 	const char	*base_char;
 
-	const base_char = "0123456789abcdef";
+	base_char = "0123456789abcdef";
 	i = 0;
 	write (1, "0x", 2);
 	(*len) = (*len) + 2;

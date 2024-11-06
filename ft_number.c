@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:08:58 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 21:36:40 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:23:46 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_number(int nbr, int *len)
 {

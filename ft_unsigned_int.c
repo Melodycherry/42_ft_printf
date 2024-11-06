@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:14 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 22:31:40 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:24:31 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_unsigned_int(unsigned int u, int *len)
 {

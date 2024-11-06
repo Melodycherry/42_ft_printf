@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 22:34:06 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 23:24:36 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:15:27 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 static void	ft_printf_check(char s, va_list *args, int *len, int *i)
 {
 	if (s == 's')
-		ft_string(va_arg(*args, char*), len);
+		ft_string(va_arg(*args, char *), len);
 	else if (s == 'd' || s == 'i')
 		ft_number(va_arg(*args, int), len);
 	else if (s == 'u')
 		ft_unsigned_int(va_arg(*args, unsigned int), len);
-	else if (s = 'x')
+	else if (s == 'x')
 		ft_hexa(va_arg(*args, unsigned int), len, 'x');
-	else if (s = 'X')
+	else if (s == 'X')
 		ft_hexa(va_arg(*args, unsigned int), len, 'X');
 	else if (s == 'p')
 		ft_pointer(va_arg(*args, size_t), len);
@@ -31,14 +31,14 @@ static void	ft_printf_check(char s, va_list *args, int *len, int *i)
 	else if (s == '%')
 		ft_putchar_len('%', len);
 	else
-		(*i)--; // reduire l'index pour traiter le caractere a l'iteration suivante
+		(*i)--;
 }
 
 int	ft_printf(const char *string, ...)
 {
 	va_list	args;
-	int i;
-	int	len;
+	int		i;
+	int		len;
 
 	i = 0;
 	len = 0;
@@ -54,7 +54,7 @@ int	ft_printf(const char *string, ...)
 		else
 		{
 			ft_putchar_len((char)string[i], &len);
-			i++;	
+			i++;
 		}
 	}
 	va_end(args);

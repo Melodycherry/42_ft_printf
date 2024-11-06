@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:08:54 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 22:27:02 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:24:04 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_hexa(unsigned int x, int *len, char hex_case)
 {

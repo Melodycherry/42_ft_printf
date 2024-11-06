@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:57:06 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 22:10:41 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:21:01 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ void	ft_hexa(unsigned int x, int *len, char hex_case);
 void	ft_unsigned_int(unsigned int u, int *len);
 void	ft_pointer(size_t ptr, int *len);
 
-void	ft_printf(const char *string, ...);
+int		ft_printf(const char *string, ...);
 
 #endif

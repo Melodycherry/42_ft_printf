@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:06 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/05 19:45:16 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:24:20 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 void	ft_putchar_len(char c, int *len)
 {
