@@ -6,11 +6,22 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:03 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/06 15:26:02 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/04/02 11:59:19 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+/**
+ * @brief Convertit une adresse de pointeur en chaîne hexadécimale et l'affiche.
+ * 
+ * Cette fonction prend une adresse de pointeur, la convertit en une 
+ * représentation hexadécimale précédée de "0x", et l'affiche. Elle met 
+ * également à jour la longueur totale des caractères imprimés.
+ * 
+ * @param ptr L'adresse du pointeur à afficher.
+ * @param len Pointeur vers la longueur totale des caractères imprimés.
+ */
 
 void	ft_pointer(size_t ptr, int *len)
 {

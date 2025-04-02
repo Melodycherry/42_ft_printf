@@ -6,12 +6,22 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:09:10 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/06 15:48:56 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/04/02 12:06:05 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/**
+ * @brief Affiche une chaîne de caractères et met à jour la longueur totale des caractères imprimés.
+ * 
+ * Cette fonction affiche une chaîne de caractères sur la sortie standard. 
+ * Si la chaîne est nulle (`NULL`), elle affiche "(null)" à la place. 
+ * Elle met également à jour le compteur de longueur totale des caractères imprimés.
+ * 
+ * @param str La chaîne de caractères à afficher.
+ * @param len Pointeur vers la longueur totale des caractères imprimés.
+ */
 void	ft_string(char *str, int *len)
 {
 	size_t	i;

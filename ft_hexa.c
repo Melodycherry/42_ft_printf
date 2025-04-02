@@ -6,12 +6,24 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:08:54 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/11/06 15:24:04 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/04/02 12:03:46 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+/**
+ * @brief Convertit un entier non signé en une représentation hexadécimale et l'affiche.
+ * 
+ * Cette fonction prend un entier non signé, le convertit en une chaîne hexadécimale 
+ * (en majuscules ou minuscules selon le paramètre `hex_case`), et l'affiche. 
+ * Elle met également à jour la longueur totale des caractères imprimés.
+ * 
+ * @param x L'entier non signé à convertir et afficher.
+ * @param len Pointeur vers la longueur totale des caractères imprimés.
+ * @param hex_case Détermine si la représentation hexadécimale est en majuscules ('X') 
+ * ou en minuscules ('x').
+ */
 void	ft_hexa(unsigned int x, int *len, char hex_case)
 {
 	char	str[25];
