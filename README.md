@@ -22,3 +22,11 @@ Cette version de `ft_printf` gère les conversions les plus courantes du `printf
 | `%x`       | Affiche un entier non signé en hexadécimal (minuscule)       | `ft_printf("Hexa : %x\n", 255);`                           | `Hexa : ff`                            |
 | `%X`       | Affiche un entier non signé en hexadécimal (majuscule)       | `ft_printf("Hexa : %X\n", 255);`                           | `Hexa : FF`                            |
 | `%%`       | Affiche simplement le caractère `%`                           | `ft_printf("Progression : 100%%\n");`                      | `Progression : 100%`                   |
+
+---
+
+✅ **STATUT:**  
+📅 Date de rendu : 06.11.2024  
+📝 Note obtenue : 100/100
+
+---
